@@ -34,12 +34,33 @@ p{
     align-items: center;
     justify-content: center;
 }
+span {
+  display: block;
+  text-align: justify;
+  border: 2px red solid;
+  font-size: 12px;
+  width: 20%;
+  margin-left: 0;
+}
 </style>
 <script src="tinymusic.js"></script>
 <script src="font.js"></script>
 </head>
 <body>
-<div id="container">
+    <div id=""> 
+    
+           <span><h2>遊戲玩法</h2><br>
+            main: 主要電力，連接系統以供電。<br>
+            aux: 輔助電力，只需要一點啟動力。<br>
+            o2: 氧氣，將六邊形連接到此以使其可呼吸。<br>
+            fuel: 燃料，將其連接到逃生系統以加油。<br>
+            escape: 逃生艙，添加燃料然後通電以操作。<br>
+            fabber: 製造系統，從這裡拾取新的導管。<br>
+            spare: 連接此六邊形的空面與導管。<br>
+            spareNo: 無法在此六邊形中放置導管。</span>
+    
+    </div>
+    <div id="container">
 	<h1>Systems Offline</h1>
     <div id="canvasContainer"></div>
 	<h2>修改自-@dhmstark - JS13K 2018</h2>
